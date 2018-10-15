@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="tw.proj.entity.Blog" table="blog" schema="hcode">
+		<id name="url" column="url"/>
+		<property name="tittle" column="tittle"/>
+		<property name="authorName" column="author_name"/>
+		<property name="authorUrl" column="author_url"/>
+		<property name="summary" column="summary"/>
+		<property name="pageviews" column="pageviews"/>
+		<property name="postdate" column="postdate"/>
+	</class>
+</hibernate-mapping>
